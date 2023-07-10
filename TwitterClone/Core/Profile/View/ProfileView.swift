@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @State private var selectedItem: TweetFilter = .tweets
-    
+    @Environment (\.dismiss) var dismiss
     var body: some View {
         VStack (alignment: .leading){
             headerView
@@ -42,7 +42,7 @@ extension ProfileView {
                 .ignoresSafeArea()
             VStack{
                 Button {
-                    print("Back")
+                    dismiss()
                 } label: {
                     Image(systemName: "arrow.left")
                         .resizable()
@@ -117,27 +117,7 @@ struct UserDetail: View {
                 .font(.caption)
                 .foregroundColor(.gray)
                 
-                HStack{
-                    HStack(spacing: 5){
-                        Text("14")
-                            .font(.subheadline)
-                            .bold()
-                        Text("Following")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                    
-                    HStack(spacing: 5){
-                        Text("89")
-                            .font(.subheadline)
-                            .bold()
-                        Text("Following")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                }
-                .padding(.vertical)
-                
+                UserStatView()                
             }
             .padding(.horizontal)
         }
