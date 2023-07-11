@@ -19,6 +19,9 @@ struct ProfileView: View {
             
             UserDetail()
             
+            UserStatView()
+                .padding()
+            
             FilterMenu(selectedItem: $selectedItem)
                 .overlay(Divider().offset(x:0, y: 16))
             
@@ -116,8 +119,6 @@ struct UserDetail: View {
                 }
                 .font(.caption)
                 .foregroundColor(.gray)
-                
-                UserStatView()                
             }
             .padding(.horizontal)
         }

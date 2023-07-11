@@ -28,16 +28,18 @@ struct SideMenuView: View {
             .padding(.leading)
 
             ForEach(SideMenuViewModel.allCases, id: \.rawValue) { menu in
-                HStack{
-                    Image(systemName: menu.imageName)
-                        .font(.headline)
-                        .foregroundColor(.gray)
-                    Text(menu.description)
-                        .font(.subheadline)
-                    Spacer()
+                if menu == .lists {
+                    SideMenuOptionRowView(viewModel: .lists)
+                } else if menu == .profile {
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOptionRowView(viewModel: .profile)
+                            .foregroundColor(.black)
+                    }
+                } else {
+                    SideMenuOptionRowView(viewModel: menu)
                 }
-                .frame(height: 40)
-                .padding(.horizontal)
             }
             
             Spacer()
@@ -50,3 +52,5 @@ struct SideMenuView_Previews: PreviewProvider {
         SideMenuView()
     }
 }
+
+
