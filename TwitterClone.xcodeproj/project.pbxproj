@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5436AD162A5F44E100CE58F1 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436AD152A5F44E100CE58F1 /* RoundedShape.swift */; };
+		5436AD182A5F698100CE58F1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436AD172A5F698100CE58F1 /* CustomTextField.swift */; };
 		543AB1612A53E3AA003B8603 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB1602A53E3AA003B8603 /* ExploreView.swift */; };
 		543AB1632A53E3BB003B8603 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB1622A53E3BB003B8603 /* NotificationsView.swift */; };
 		543AB1652A53E3D2003B8603 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB1642A53E3D2003B8603 /* ProfileView.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5436AD152A5F44E100CE58F1 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		5436AD172A5F698100CE58F1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		543AB1602A53E3AA003B8603 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		543AB1622A53E3BB003B8603 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		543AB1642A53E3D2003B8603 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 			children = (
 				543AB16E2A55A2DE003B8603 /* Users */,
 				543FDED32A536C7800251FD1 /* Tweets */,
+				5436AD152A5F44E100CE58F1 /* RoundedShape.swift */,
+				5436AD172A5F698100CE58F1 /* CustomTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				543FDED92A53701900251FD1 /* MainTabView.swift in Sources */,
 				543AB1632A53E3BB003B8603 /* NotificationsView.swift in Sources */,
 				54836E692A5D2F9F00143796 /* RegistrationView.swift in Sources */,
+				5436AD182A5F698100CE58F1 /* CustomTextField.swift in Sources */,
 				543FC2D42A5CA589000AF546 /* UserStatView.swift in Sources */,
 				5448ED652A5B809300FC2E50 /* SideMenuVideModel.swift in Sources */,
 				543AB1672A53E3DF003B8603 /* MessagesView.swift in Sources */,
@@ -391,6 +398,7 @@
 				54836E672A5D2F9300143796 /* LoginView.swift in Sources */,
 				54836E5B2A5D1B5400143796 /* SideMenuOptionRowView.swift in Sources */,
 				54836E612A5D2BA000143796 /* NewTweetView.swift in Sources */,
+				5436AD162A5F44E100CE58F1 /* RoundedShape.swift in Sources */,
 				543FDEBF2A53627100251FD1 /* TwitterCloneApp.swift in Sources */,
 				543AB1702A55A2EF003B8603 /* UserRowView.swift in Sources */,
 				543AB1612A53E3AA003B8603 /* ExploreView.swift in Sources */,
